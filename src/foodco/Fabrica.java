@@ -12,17 +12,31 @@ import java.util.*;
  * @author Juliana
  */
 public class Fabrica {
+    private String nombre;
     private ArrayList<Personal> personal;
     private ArrayList<Producto> producto;
     private Personal empleado;
     private Producto product;
 
-    public Fabrica() {
+    public Fabrica() 
+    {
+        this.nombre = "";
         this.personal = new ArrayList <Personal> ();
         this.producto = new ArrayList <Producto>();
         this.empleado = new Personal ();
         this.product = new Producto ();
     }
+    
+    public void setNombre(String a )
+    {
+        this.nombre = a;
+    }
+    
+    public String getNombre()
+    {
+        return this.nombre;
+    }
+    
     public double salarioTotal()
     {
         double total = 0 ;
