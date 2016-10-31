@@ -18,9 +18,9 @@ public class Fabrica {
     private Personal empleado;
     private Producto product;
 
-    public Fabrica() 
+    public Fabrica(String a ) 
     {
-        this.nombre = "";
+        this.nombre = a;
         this.personal = new ArrayList <Personal> ();
         this.producto = new ArrayList <Producto>();
         this.empleado = new Personal ();
